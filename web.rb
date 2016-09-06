@@ -28,3 +28,7 @@ end
 get '/publica' do
   erb :publica
 end
+
+get '/busqueda' do
+  erb :busqueda
+end
