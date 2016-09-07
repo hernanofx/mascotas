@@ -6,26 +6,32 @@
     </head>
     <body>
         <form name="busqueda" id="busqueda" class="w3-container" action="/formulario_busqueda" method="post">
-            <div id="divform" class="w3-container w3-black" style="margin-top:75px">
-                <input class="w3-check" type="checkbox">
-                <label class="w3-validate">Perdida</label>
-                <input class="w3-check" type="checkbox" >
-                <label class="w3-validate">Encontrada</label>
-                <input class="w3-check" type="checkbox" >
-                <label class="w3-validate">Adopción</label>
+            <div id="divform" class="w3-container" style="margin-top:75px">
+                <div id="botones">
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Perdida</label>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Encontrada</label>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Adopción</label>
+                    <input class="w3-radio" type="radio" name="pais" value="Argentina" checked>
+                    <label class="w3-validate">Argentina</label>
+                </div>
+                
+                <div id="campos">
+                    <input type="text" name="primernombre" class="w3-input w3-hover-amber w3-border" placeholder="Nombre">
+                    <input type="text" name="apellido" class="w3-input w3-hover-amber w3-border" placeholder="Apellido">
+                    <input type="tel" name="telefono" class="w3-input w3-hover-amber w3-border" placeholder="Teléfono">
+                    <input type="email" name="email" class="w3-input w3-hover-amber w3-border" placeholder="E-mail">
+                    <input type="text" name="provincia" class="w3-input w3-hover-amber w3-border" placeholder="provincia">
+                    <input type="text" name="descripcion" class="w3-input w3-hover-amber w3-border" placeholder="Descripción">
+                    <input type="file" name="imagen" class="w3-input w3-hover-amber w3-border" placeholder="Imagen">
+                </div>
 
-                <input class="w3-radio" type="radio" name="pais" value="Argentina" checked>
-                <label class="w3-validate">Argentina</label>
+                <div id="send">
+                    <button class="w3-btn-block w3-blue-grey">Enviar</button>
+                </div>
 
-                <input type="text" name="primernombre" class="w3-input w3-hover-amber w3-border" placeholder="Nombre">
-                <input type="text" name="apellido" class="w3-input w3-hover-amber w3-border" placeholder="Apellido">
-                <input type="tel" name="telefono" class="w3-input w3-hover-amber w3-border" placeholder="Teléfono">
-                <input type="email" name="email" class="w3-input w3-hover-amber w3-border" placeholder="E-mail">
-                <input type="text" name="provincia" class="w3-input w3-hover-amber w3-border" placeholder="provincia">
-                <input type="text" name="descripcion" class="w3-input w3-hover-amber w3-border" placeholder="Descripción">
-                <input type="file" name="imagen" class="w3-input w3-hover-amber w3-border" placeholder="Imagen">
-
-                <button class="w3-btn-block w3-blue-grey">Enviar</button>
             </div>
 
         </form>
