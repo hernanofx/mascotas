@@ -32,3 +32,7 @@ end
 get '/busqueda' do
   erb :busqueda
 end
+
+post 'formulario_busqueda' do
+  
+end
