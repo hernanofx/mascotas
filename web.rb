@@ -33,6 +33,6 @@ get '/busqueda' do
   erb :busqueda
 end
 
-post 'formulario_busqueda' do
-  
+post '/formulario_busqueda' do
+  "Tu busqueda ya ha sido recibida y será subida a la brevedad"
 end
