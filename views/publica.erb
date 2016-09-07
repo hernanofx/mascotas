@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="<%= url('/estilos/estilos.css') %>" rel="stylesheet" type="text/css"/>
-    <title>Mascotas perdidas y encontradas | Publica tu anuncio</title>
-  </head>
-  <body>
-    <form class="w3-container" action="publica" method="post">
-      <input type="text" name="nombre" value="nombre">
-      <label> Nombre</label>
+    <head>
+        <meta charset="utf-8">
+        <title>Mascotas perdidas y encontradas | Publica tu anuncio</title>
+    </head>
+    <body>
+        <form name="busqueda" id="busqueda" class="w3-container" action="/formulario_busqueda" method="post">
+            <input type="text" name="nombre" value="nombre">
+            <label>
+                Nombre</label>
 
-      <input type="text" name="apellido" value="apellido">
-      <label> Apellido</label>
+            <input type="text" name="apellido" value="apellido">
+            <label>
+                Apellido</label>
 
-      <input type="text" name="dirección" value="">
-      <label> Dirección</label>
+            <input type="text" name="dirección" value="">
+            <label>
+                Dirección</label>
 
-      <input type="text" name="localidad" value="localidad">
-      <label> Localidad</label>
+            <input type="text" name="localidad" value="localidad">
+            <label>
+                Localidad</label>
 
-      <input type="text" name="provincia" value="provincia">
-      <label> Provincia</label>
+            <input type="text" name="provincia" value="provincia">
+            <label>
+                Provincia</label>
 
-      <input type="w3-radio" name="argentina" value="pais" checked="checked">
-      <label> Pais</label>
+            <input type="w3-radio" name="argentina" value="pais" checked="checked">
+            <label>
+                Pais</label>
 
-      <input type="text" name="descripcion" value="descripcion">
-      <label> Descripción</label>
+            <input type="text" name="descripcion" value="descripcion">
+            <label>
+                Descripción</label>
 
-      <input type="file" name="imagen" value="imagen">
-      <label> Foto</label>
+            <input type="file" name="imagen" value="imagen">
+            <label>
+                Foto</label>
+            <button class="w3-btn-block w3-blue-grey">Enviar</button>
 
+        </form>
 
-
-    </form>
-
-  </body>
+    </body>
 </html>
