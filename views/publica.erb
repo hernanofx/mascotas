@@ -6,7 +6,7 @@
     </head>
     <body>
         <form name="busqueda" id="busqueda" class="form-inline" action="/formulario_busqueda" method="post">
-            <div id="divform" class="form-group" style="margin-top:75px" >
+            <div id="divform" class="form-group" style="margin-top:75px">
                 <div id="tipo">
                     <input class="w3-check" type="checkbox">
                     <label class="w3-validate">Perdida</label>
@@ -24,16 +24,22 @@
                 <br>
 
                 <div id="campos">
-                    <input type="text" name="primernombre" class="form-control" placeholder="Nombre">
-                    <input type="text" name="apellido" class="form-control" placeholder="Apellido">
-                    <input type="tel" name="telefono" class="form-control" placeholder="Teléfono">
-                    <input type="email" name="email" class="w3-input w3-hover-amber w3-border" placeholder="E-mail">
-                    <input type="text" name="provincia" class="w3-input w3-hover-amber w3-border" placeholder="Provincia">
-                    <input type="text" name="localidad" class="w3-input w3-hover-amber w3-border" placeholder="Localidad">
-                    <input type="text" name="calle" class="w3-input w3-hover-amber w3-border" placeholder="Calle">
-                    <input type="number" name="altura" class="w3-input w3-hover-amber w3-border" placeholder="Altura">
-                    <input type="text" name="descripcion" class="w3-input w3-hover-amber w3-border" placeholder="Descripción">
-                    <input type="file" name="imagen" class="w3-input w3-hover-amber w3-border" placeholder="Imagen">
+                    <div class="w3-third">
+                        <input type="text" name="primernombre" class="form-control" placeholder="Nombre">
+                        <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+                        <input type="tel" name="telefono" class="form-control" placeholder="Teléfono">
+                    </div>
+                    <div class="w3-third">
+                        <input type="email" name="email" class="form-control" placeholder="E-mail">
+                        <input type="text" name="provincia" class="form-control" placeholder="Provincia">
+                        <input type="text" name="localidad" class="form-control" placeholder="Localidad">
+                    </div>
+                    <div class="w3-third">
+                        <input type="text" name="calle" class="form-control" placeholder="Calle">
+                        <input type="number" name="altura" class="form-control" placeholder="Altura">
+                        <input type="text" name="descripcion" class="form-control" placeholder="Descripción">
+                        <input type="file" name="imagen" class="form-control" placeholder="Imagen">
+                    </div>
                 </div>
                 <br>
 
