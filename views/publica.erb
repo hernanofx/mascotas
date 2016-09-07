@@ -5,40 +5,18 @@
         <title>Mascotas perdidas y encontradas | Publica tu anuncio</title>
     </head>
     <body>
-        <form name="busqueda" id="busqueda" class="w3-container" action="formulario_busqueda" method="post">
+        <form name="busqueda" id="busqueda" class="w3-container" action="/formulario_busqueda" method="post">
             <div id="divform" class="w3-container w3-teal">
 
-                <input type="text" name="nombre" value="nombre" id="busqueda">
-                <label>
-                    Nombre</label>
-
-                <input type="text" name="apellido" value="apellido" id="busqueda">
-                <label>
-                    Apellido</label>
-
-                <input type="text" name="dirección" value="direccion" id="busqueda">
-                <label>
-                    Dirección</label>
-
-                <input type="text" name="localidad" value="localidad" id="busqueda">
-                <label>
-                    Localidad</label>
-
-                <input type="text" name="provincia" value="provincia" id="busqueda">
-                <label>
-                    Provincia</label>
-
-                <input type="w3-radio" name="argentina" value="pais" checked="checked" id="busqueda">
-                <label>
-                    Pais</label>
-
-                <input type="text" name="descripcion" value="descripcion" id="busqueda">
-                <label>
-                    Descripción</label>
-
-                <input type="file" name="imagen" value="imagen" id="busqueda">
-                <label>
-                    Foto</label>
+                <input type="text" name="primernombre" class="w3-input w3-hover-dark-grey w3-border" placeholder="Nombre">
+                <input type="text" name="apellido" class="w3-input w3-hover-dark-grey w3-border" placeholder="Apellido">
+                <input type="tel" name="telefono" class="w3-input w3-hover-dark-grey w3-border" placeholder="Teléfono">
+                <input type="email" name="email" class="w3-input w3-hover-dark-grey w3-border" placeholder="E-mail">
+                <input type="text" name="provincia" class="w3-input w3-hover-dark-grey w3-border" placeholder="provincia">
+                <input type="w3-radio" name="argentina"  class="w3-input w3-hover-dark-grey w3-border" checked="checked">
+                <input type="text" name="descripcion" class="w3-input w3-hover-dark-grey w3-border" placeholder="Descripción">
+                <input type="file" name="imagen" class="w3-input w3-hover-dark-grey w3-border" placeholder="Imagen">
+              
                 <button class="w3-btn-block w3-blue-grey">Enviar</button>
             </div>
 
